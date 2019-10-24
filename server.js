@@ -28,7 +28,7 @@ app.use(bodyParser.json()); //comes after the app variable ahs been created
 app.use(cors());
 
 app.get("/", (req, res) => {
-	res.send(database.users); //just a check
+	res.send("It's working. Right?"); //just a check
 })
 
 //THE SIGNIN:
