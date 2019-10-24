@@ -153,8 +153,8 @@ app.put("/image", (req, res) => {
 // });
 
 //which port to listen to,
-app.listen(3000, () => {
-	console.log("app is running on port 3000");
+app.listen(process.env.PORT || 3000, () => { //basically saying if we get a port from the environment, use that, otherwise, 3000
+	console.log(`app is running on port ${process.env.PORT}`);
 })
 
 
